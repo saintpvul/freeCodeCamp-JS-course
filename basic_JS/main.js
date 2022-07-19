@@ -1,11 +1,4 @@
-// Compound Assignment With Augmented Division
-// Convert the assignments for a, b, and c to use the /= operator.
+// Escaping Literal Quotes in Strings
+// Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
 
-let a = 48;
-let b = 108;
-let c = 33;
-
-// Only change code below this line
-a /= 12;
-b /= 4;
-c /= 11;
+let myStr = 'I am a "double quoted" string inside "double quotes".';
