@@ -1,6 +1,8 @@
-// Quoting Strings with Single Quotes
-// Change the provided string to a string with single quotes at the beginning and end and no escape characters.
+// Escape Sequences in Strings
+// Assign the following three lines of text into the single variable myStr using escape sequences.
 
-// Right now, the <a> tag in the string uses double quotes everywhere. You will need to change the outer quotes to single quotes so you can remove the escape characters.
+// FirstLine
+// 		\SecondLine
+// ThirdLine
 
-const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
