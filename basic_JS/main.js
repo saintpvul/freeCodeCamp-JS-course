@@ -1,4 +1,6 @@
-// Escaping Literal Quotes in Strings
-// Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
+// Quoting Strings with Single Quotes
+// Change the provided string to a string with single quotes at the beginning and end and no escape characters.
 
-let myStr = 'I am a "double quoted" string inside "double quotes".';
+// Right now, the <a> tag in the string uses double quotes everywhere. You will need to change the outer quotes to single quotes so you can remove the escape characters.
+
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
