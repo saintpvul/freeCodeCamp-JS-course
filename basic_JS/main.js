@@ -1,12 +1,14 @@
-// Understanding Uninitialized Variables
-// Initialize the three variables a, b, and c with 5, 10, and "I am a" respectively so that they will not be undefined.
+// Understanding Case Sensitivity in Variables
+// Modify the existing declarations and assignments so their names use camelCase.
 
-// Only change code below this line
-var a = 5;
-var b = 10;
-var c = "I am a";
-// Only change code above this line
+// Do not create any new variables.
 
-a = a + 1;
-b = b + 5;
-c = c + " String!";
+// Variable declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Variable assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
