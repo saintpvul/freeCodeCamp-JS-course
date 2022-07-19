@@ -1,11 +1,11 @@
-// Compound Assignment With Augmented Multiplication
-// Convert the assignments for a, b, and c to use the *= operator.
+// Compound Assignment With Augmented Division
+// Convert the assignments for a, b, and c to use the /= operator.
 
-let a = 5;
-let b = 12;
-let c = 4.6;
+let a = 48;
+let b = 108;
+let c = 33;
 
 // Only change code below this line
-a *= 5;
-b *= 3;
-c *= 10;
+a /= 12;
+b /= 4;
+c /= 11;
