@@ -1,5 +1,5 @@
-// Divide One Decimal by Another with JavaScript
+// Finding a Remainder in JavaScript
 
-// Change the 0.0 so that quotient will equal to 2.2.
+// Set remainder equal to the remainder of 11 divided by 3 using the remainder (%) operator.
 
-const product = 4.4 * 2.0;
+const remainder = 11 % 3;
