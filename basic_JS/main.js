@@ -1,5 +1,12 @@
-// Declare String Variables
-// Create two new string variables: myFirstName and myLastName and assign them the values of your first and last name, respectively.
+// Understanding Uninitialized Variables
+// Initialize the three variables a, b, and c with 5, 10, and "I am a" respectively so that they will not be undefined.
 
-var myFirstName = "Paul";
-var myLastName = "Shvets";
+// Only change code below this line
+var a = 5;
+var b = 10;
+var c = "I am a";
+// Only change code above this line
+
+a = a + 1;
+b = b + 5;
+c = c + " String!";
