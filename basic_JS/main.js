@@ -1,8 +1,7 @@
-// Decrement a Number with JavaScript
+// Create Decimal Numbers with JavaScript
 
-// Change the code to use the -- operator on myVar.
+// Create a variable myDecimal and give it a decimal value with a fractional part (e.g. 5.7).
 
-let myVar = 11;
-
+const ourDecimal = 5.7;
+const myDecimal = 7.5;
 // Only change code below this line
-myVar--;
