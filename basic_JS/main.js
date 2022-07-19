@@ -1,4 +1,4 @@
-// Declare JavaScript Variables
-// Use the var keyword to create a variable called myName.
-
-var myName;
+// Storing Values with the Assignment Operator
+// Assign the value 7 to variable a.
+var a;
+a = 7;
