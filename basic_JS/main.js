@@ -1,3 +1,5 @@
-// Initializing Variables with the Assignment Operator
-// Define a variable a with var and initialize it to a value of 9.
-var a = 9;
+// Declare String Variables
+// Create two new string variables: myFirstName and myLastName and assign them the values of your first and last name, respectively.
+
+var myFirstName = "Paul";
+var myLastName = "Shvets";
