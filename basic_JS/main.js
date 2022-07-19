@@ -1,5 +1,5 @@
-// Multiply Two Decimals with JavaScript
+// Divide One Decimal by Another with JavaScript
 
-// Change the 0.0 so that product will equal 5.0.
+// Change the 0.0 so that quotient will equal to 2.2.
 
-const product = 2.0 * 2.5;
+const product = 4.4 * 2.0;
