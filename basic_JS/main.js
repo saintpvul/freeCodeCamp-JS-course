@@ -1,5 +1,4 @@
-// Comment Your JavaScript Code
-// Try creating one of each type of comment.
+// Declare JavaScript Variables
+// Use the var keyword to create a variable called myName.
 
-// comment
-/* comment */
+var myName;
