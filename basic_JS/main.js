@@ -1,9 +1,8 @@
-// Understand String Immutability
-// Correct the assignment to myStr so it contains the string value of Hello World using the approach shown in the example above.
+// Use Bracket Notation to Find the Nth Character in a String
+// Let's try to set thirdLetterOfLastName to equal the third letter of the lastName variable using bracket notation.
 
 // Setup
-let myStr = "Jello World";
+const lastName = "Lovelace";
 
 // Only change code below this line
-myStr = "Hello World"; // Change this line
-// Only change code above this line
+const thirdLetterOfLastName = lastName[2]; // Change this line
