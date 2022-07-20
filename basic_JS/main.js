@@ -1,8 +1,8 @@
-// Use Bracket Notation to Find the Nth Character in a String
-// Let's try to set thirdLetterOfLastName to equal the third letter of the lastName variable using bracket notation.
+// Use Bracket Notation to Find the Last Character in a String
+// Use bracket notation to find the last character in the lastName variable.
 
 // Setup
 const lastName = "Lovelace";
 
 // Only change code below this line
-const thirdLetterOfLastName = lastName[2]; // Change this line
+const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
