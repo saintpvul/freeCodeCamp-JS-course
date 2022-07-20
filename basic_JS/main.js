@@ -1,10 +1,11 @@
-// Manipulate Arrays With shift()
-// Use the .shift() function to remove the first item from myArray and assign the "shifted off" value to a new variable, removedFromMyArray.
+// Manipulate Arrays With unshift()
+// Add ["Paul", 35] to the beginning of the myArray variable using unshift().
 
 // Setup
 const myArray = [
   ["John", 23],
   ["dog", 3],
 ];
-const removedFromMyArray = myArray.shift();
+myArray.shift();
+myArray.unshift(["Paul", 35]);
 // Only change code below this line
