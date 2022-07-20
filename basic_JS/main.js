@@ -1,5 +1,5 @@
-// Nest one Array within Another Array
-// Create a nested array called myArray.
+// Access Array Data with Indexes
+// Create a variable called myData and set it to equal the first value of myArray using bracket notation.
 
-// Only change code below this line
-const myArray = [["First array"], ["Second Array"]];
+const myArray = [50, 60, 70];
+const myData = myArray[0];
