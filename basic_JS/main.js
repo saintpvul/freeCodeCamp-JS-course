@@ -1,8 +1,24 @@
-// Use Bracket Notation to Find the Nth-to-Last Character in a String
-// Use bracket notation to find the second-to-last character in the lastName string.
+// Word Blanks
+/* In this challenge, we provide you with a noun, a verb, an adjective and an adverb. You need to form a complete sentence using words of your choice, along with the words we provide.
 
-// Setup
-const lastName = "Lovelace";
+You will need to use the string concatenation operator + to build a new string, using the provided variables: myNoun, myAdjective, myVerb, and myAdverb. You will then assign the formed string to the wordBlanks variable. You should not change the words assigned to the variables.
+
+You will also need to account for spaces in your string, so that the final sentence has spaces between all the words. The result should be a complete sentence.
+*/
+
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
 
 // Only change code below this line
-const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+const wordBlanks =
+  "The " +
+  myNoun +
+  " was so " +
+  myAdjective +
+  ". He " +
+  myVerb +
+  " " +
+  myAdverb; // Change this line
+// Only change code above this line
