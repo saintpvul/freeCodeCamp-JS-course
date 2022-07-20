@@ -1,9 +1,30 @@
-// Return a Value from a Function with Return
-// Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
+// Global Scope and Functions
+/* 
 
-function timesFive(num) {
-  return num * 5;
+Using let or const, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10.
+
+Inside function fun1, assign 5 to oopsGlobal without using the var, let or const keywords.
+
+*/
+
+// Declare the myGlobal variable below this line
+
+let myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5;
 }
-timesFive(5);
-timesFive(2);
-timesFive(0);
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
