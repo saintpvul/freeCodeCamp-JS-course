@@ -1,8 +1,4 @@
-// Escape Sequences in Strings
-// Assign the following three lines of text into the single variable myStr using escape sequences.
+// Concatenating Strings with Plus Operator
+// Build myStr from the strings This is the start. and This is the end. using the + operator. Be sure to include a space between the two strings.
 
-// FirstLine
-// 		\SecondLine
-// ThirdLine
-
-const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+const myStr = "This is the start. " + "This is the end."; // Change this line
