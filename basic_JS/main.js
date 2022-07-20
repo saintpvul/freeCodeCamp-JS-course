@@ -1,5 +1,7 @@
-// Access Array Data with Indexes
-// Create a variable called myData and set it to equal the first value of myArray using bracket notation.
+// Modify Array Data With Indexes
+// Modify the data stored at index 0 of myArray to a value of 45.
 
-const myArray = [50, 60, 70];
-const myData = myArray[0];
+// Setup
+const myArray = [18, 64, 99];
+myArray[0] = 45;
+// Only change code below this line
