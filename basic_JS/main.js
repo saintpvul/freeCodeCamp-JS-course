@@ -1,22 +1,22 @@
-// Comparison with the Less Than Operator
+// Comparison with the Less Than Or Equal To Operator
 /* 
 
-Add the less than operator to the indicated lines so that the return statements make sense.
+Add the less than or equal to operator to the indicated lines so that the return statements make sense.
 
 */
 
-function testLessThan(val) {
-  if (val < 25) {
+function testLessOrEqual(val) {
+  if (val <= 12) {
     // Change this line
-    return "Under 25";
+    return "Smaller Than or Equal to 12";
   }
 
-  if (val < 55) {
+  if (val <= 24) {
     // Change this line
-    return "Under 55";
+    return "Smaller Than or Equal to 24";
   }
 
-  return "55 or Over";
+  return "More Than 24";
 }
 
-testLessThan(10);
+testLessOrEqual(10);
