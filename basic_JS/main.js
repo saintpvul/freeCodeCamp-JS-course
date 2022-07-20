@@ -1,22 +1,22 @@
-// Comparison with the Greater Than Operator
+// Comparison with the Greater Than Or Equal To Operator
 /* 
 
-Add the greater than operator to the indicated lines so that the return statements make sense.
+Add the greater than or equal to operator to the indicated lines so that the return statements make sense.
 
 */
 
-function testGreaterThan(val) {
-  if (val > 100) {
+function testGreaterOrEqual(val) {
+  if (val >= 20) {
     // Change this line
-    return "Over 100";
+    return "20 or Over";
   }
 
-  if (val > 10) {
+  if (val >= 10) {
     // Change this line
-    return "Over 10";
+    return "10 or Over";
   }
 
-  return "10 or Under";
+  return "Less than 10";
 }
 
-testGreaterThan(10);
+testGreaterOrEqual(10);
