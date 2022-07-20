@@ -1,18 +1,22 @@
-// Global vs. Local Scope in Functions
+// Understanding Undefined Value returned from a Function
 /* 
 
-Add a local variable to myOutfit function to override the value of outerWear with the string sweater.
-
+Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined.
 */
 
 // Setup
-const outerWear = "T-Shirt";
+let sum = 0;
 
-function myOutfit() {
-  // Only change code below this line
-  let outerWear = "sweater";
-  // Only change code above this line
-  return outerWear;
+function addThree() {
+  sum = sum + 3;
 }
 
-myOutfit();
+// Only change code below this line
+function addFive() {
+  sum = sum + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
