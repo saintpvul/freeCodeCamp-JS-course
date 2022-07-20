@@ -1,16 +1,24 @@
-// Assignment with a Returned Value
+// Stand in Line
 /* 
 
-Call the processArg function with an argument of 7 and assign its return value to the variable processed.
+Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
 
+Add the number to the end of the array, then remove the first element of the array.
+
+The nextInLine function should then return the element that was removed.
 */
 
-// Setup
-let processed = 0;
-
-function processArg(num) {
-  return (num + 3) / 5;
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+  return arr.shift(item);
+  // Only change code above this line
 }
 
-processed = processArg(7);
-// Only change code below this line
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
