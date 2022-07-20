@@ -1,17 +1,17 @@
-// Comparison with the Inequality Operator
+// Comparison with the Strict Inequality Operator
 /* 
 
-Add the inequality operator != in the if statement so that the function will return the string Not Equal when val is not equivalent to 99.
+Add the strict inequality operator to the if statement so the function will return the string Not Equal when val is not strictly equal to 17
 
 */
 
 // Setup
-function testNotEqual(val) {
-  if (val != 99) {
+function testStrictNotEqual(val) {
+  if (val !== 17) {
     // Change this line
     return "Not Equal";
   }
   return "Equal";
 }
 
-testNotEqual(10);
+testStrictNotEqual(10);
