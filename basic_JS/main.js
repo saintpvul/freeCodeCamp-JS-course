@@ -1,17 +1,17 @@
-// Practice comparing different values
+// Comparison with the Inequality Operator
 /* 
 
-The compareEquality function in the editor compares two values using the equality operator. Modify the function so that it returns the string Equal only when the values are strictly equal.
+Add the inequality operator != in the if statement so that the function will return the string Not Equal when val is not equivalent to 99.
 
 */
 
 // Setup
-function compareEquality(a, b) {
-  if (a === b) {
+function testNotEqual(val) {
+  if (val != 99) {
     // Change this line
-    return "Equal";
+    return "Not Equal";
   }
-  return "Not Equal";
+  return "Equal";
 }
 
-compareEquality(10, "10");
+testNotEqual(10);
