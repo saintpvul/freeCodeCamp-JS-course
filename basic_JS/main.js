@@ -1,17 +1,17 @@
-// Comparison with the Equality Operator
+// Comparison with the Strict Equality Operator
 /* 
 
-Add the equality operator to the indicated line so that the function will return the string Equal when val is equivalent to 12.
+Use the strict equality operator in the if statement so the function will return the string Equal when val is strictly equal to 7.
 
 */
 
 // Setup
-function testEqual(val) {
-  if (val == 12) {
+function testStrict(val) {
+  if (val === 7) {
     // Change this line
     return "Equal";
   }
   return "Not Equal";
 }
 
-testEqual(10);
+testStrict(10);
