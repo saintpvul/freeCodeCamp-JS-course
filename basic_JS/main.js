@@ -1,11 +1,10 @@
-// Access Multi-Dimensional Arrays With Indexes
-// Using bracket notation select an element from myArray such that myData is equal to 8.
+// Manipulate Arrays With push()
+// Push ["dog", 3] onto the end of the myArray variable.
 
+// Setup
 const myArray = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-  [[10, 11, 12], 13, 14],
+  ["John", 23],
+  ["cat", 2],
 ];
-
-const myData = myArray[2][1];
+myArray.push(["dog", 3]);
+// Only change code below this line
