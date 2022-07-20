@@ -1,9 +1,9 @@
-// Use Bracket Notation to Find the First Character in a String
-// Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
+// Understand String Immutability
+// Correct the assignment to myStr so it contains the string value of Hello World using the approach shown in the example above.
 
 // Setup
-let firstLetterOfLastName = "";
-const lastName = "Lovelace";
+let myStr = "Jello World";
 
 // Only change code below this line
-firstLetterOfLastName = lastName[0]; // Change this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line
