@@ -1,22 +1,16 @@
-// Understanding Undefined Value returned from a Function
+// Assignment with a Returned Value
 /* 
 
-Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined.
+Call the processArg function with an argument of 7 and assign its return value to the variable processed.
+
 */
 
 // Setup
-let sum = 0;
+let processed = 0;
 
-function addThree() {
-  sum = sum + 3;
+function processArg(num) {
+  return (num + 3) / 5;
 }
 
+processed = processArg(7);
 // Only change code below this line
-function addFive() {
-  sum = sum + 5;
-}
-
-// Only change code above this line
-
-addThree();
-addFive();
