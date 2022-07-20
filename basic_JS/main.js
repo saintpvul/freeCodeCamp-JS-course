@@ -1,5 +1,6 @@
-// Constructing Strings with Variables
-// Set myName to a string equal to your name and build myStr with myName between the strings My name is and and I am well!
+// Appending Variables to Strings
+// Set someAdjective to a string of at least 3 characters and append it to myStr using the += operator.
 
-let myName = "Paul";
-let myStr = "my name is " + myName + " and I am well!";
+let myStr = "my name is Paul and I am well!";
+let someAdjective = "you know?";
+myStr += someAdjective;
