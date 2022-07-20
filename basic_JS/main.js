@@ -1,17 +1,22 @@
-// Comparison with the Strict Inequality Operator
+// Comparison with the Greater Than Operator
 /* 
 
-Add the strict inequality operator to the if statement so the function will return the string Not Equal when val is not strictly equal to 17
+Add the greater than operator to the indicated lines so that the return statements make sense.
 
 */
 
-// Setup
-function testStrictNotEqual(val) {
-  if (val !== 17) {
+function testGreaterThan(val) {
+  if (val > 100) {
     // Change this line
-    return "Not Equal";
+    return "Over 100";
   }
-  return "Equal";
+
+  if (val > 10) {
+    // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
 }
 
-testStrictNotEqual(10);
+testGreaterThan(10);
