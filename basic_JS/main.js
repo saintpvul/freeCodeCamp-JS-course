@@ -1,10 +1,11 @@
-// Write Reusable JavaScript with Functions
-/* Create a function called reusableFunction which prints the string Hi World to the dev console.
-Call the function.
+// Passing Values to Functions with Arguments
+/* Create a function called functionWithArgs that accepts two arguments and outputs their sum to the dev console.
+Call the function with two numbers as arguments.
+
 */
 
-function reusableFunction() {
-  console.log("Hi World");
+function functionWithArgs(param1, param2) {
+  console.log(param1 + param2);
 }
 
-reusableFunction();
+functionWithArgs(2, 4);
