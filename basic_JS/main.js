@@ -1,5 +1,5 @@
-// Store Multiple Values in one Variable using JavaScript Arrays
-// Modify the new array myArray so that it contains both a string and a number (in that order).
+// Nest one Array within Another Array
+// Create a nested array called myArray.
 
 // Only change code below this line
-const myArray = ["String", 1];
+const myArray = [["First array"], ["Second Array"]];
