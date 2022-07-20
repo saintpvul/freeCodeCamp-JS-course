@@ -1,19 +1,18 @@
-// Local Scope and Functions
+// Global vs. Local Scope in Functions
 /* 
 
-The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
-
-Note: The console will still display ReferenceError: myVar is not defined, but this will not cause the tests to fail.
+Add a local variable to myOutfit function to override the value of outerWear with the string sweater.
 
 */
 
-function myLocalScope() {
-  // Only change code below this line
-  let myVar;
-  console.log("inside myLocalScope", myVar);
-}
-myLocalScope();
+// Setup
+const outerWear = "T-Shirt";
 
-// Run and check the console
-// myVar is not defined outside of myLocalScope
-console.log("outside myLocalScope", myVar);
+function myOutfit() {
+  // Only change code below this line
+  let outerWear = "sweater";
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
