@@ -1,17 +1,17 @@
-// Comparison with the Strict Equality Operator
+// Practice comparing different values
 /* 
 
-Use the strict equality operator in the if statement so the function will return the string Equal when val is strictly equal to 7.
+The compareEquality function in the editor compares two values using the equality operator. Modify the function so that it returns the string Equal only when the values are strictly equal.
 
 */
 
 // Setup
-function testStrict(val) {
-  if (val === 7) {
+function compareEquality(a, b) {
+  if (a === b) {
     // Change this line
     return "Equal";
   }
   return "Not Equal";
 }
 
-testStrict(10);
+compareEquality(10, "10");
