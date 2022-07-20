@@ -1,9 +1,9 @@
-// Find the Length of a String
-// Use the .length property to set lastNameLength to the number of characters in lastName.
+// Use Bracket Notation to Find the First Character in a String
+// Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
 
 // Setup
-let lastNameLength = 0;
+let firstLetterOfLastName = "";
 const lastName = "Lovelace";
 
 // Only change code below this line
-lastNameLength = lastName.length;
+firstLetterOfLastName = lastName[0]; // Change this line
