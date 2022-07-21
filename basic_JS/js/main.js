@@ -1,15 +1,28 @@
-// Add New Properties to a JavaScript Objectf
+// Using Objects for Lookups
 
 /*
 
-Add a bark property to myDog and set it to a dog sound, such as "woof". You may use either dot or bracket notation.
+Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
+
 
 */
 
-const myDog = {
-  name: "Happy Coder",
-  legs: 4,
-  tails: 1,
-  friends: ["freeCodeCamp Campers"],
-};
-myDog.bark = "Woof";
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+  const lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank",
+  };
+  result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
