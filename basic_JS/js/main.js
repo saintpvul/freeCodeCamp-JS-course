@@ -1,28 +1,17 @@
-// Using Objects for Lookups
+// Testing Objects for Properties
 
 /*
 
-Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
-
+Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp). If the property is found, return that property's value. If not, return "Not Found".
 
 */
 
-// Setup
-function phoneticLookup(val) {
-  let result = "";
-
+function checkObj(obj, checkProp) {
   // Only change code below this line
-  const lookup = {
-    alpha: "Adams",
-    bravo: "Boston",
-    charlie: "Chicago",
-    delta: "Denver",
-    echo: "Easy",
-    foxtrot: "Frank",
-  };
-  result = lookup[val];
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
   // Only change code above this line
-  return result;
 }
-
-phoneticLookup("charlie");
