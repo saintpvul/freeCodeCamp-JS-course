@@ -1,21 +1,32 @@
-// Logical Order in If Else Statements
+// Chaining If Else Statements
 
 /* 
 
-Change the order of logic in the function so that it will return the correct statements in all cases.
+Write chained if/else if statements to fulfill the following conditions:
+
+num < 5 - return Tiny
+num < 10 - return Small
+num < 15 - return Medium
+num < 20 - return Large
+num >= 20 - return Huge
 
 */
 
-function orderMyLogic(val) {
-  if (val < 10 && val >= 5) {
-    return "Less than 10";
-  } else if (val < 5) {
-    return "Less than 5";
+function testSize(num) {
+  // Only change code below this line
+  if (num < 5) {
+    return "Tiny";
+  } else if (num < 10 && num >= 5) {
+    return "Small";
+  } else if (num < 15 && num >= 10) {
+    return "Medium";
+  } else if (num < 20 && num >= 15) {
+    return "Large";
   } else {
-    return "Greater than or equal to 10";
+    return "Huge";
   }
+  return "Change Me";
+  // Only change code above this line
 }
 
-orderMyLogic(7);
-orderMyLogic(2);
-orderMyLogic(11);
+testSize(7);
