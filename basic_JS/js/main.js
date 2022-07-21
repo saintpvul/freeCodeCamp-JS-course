@@ -1,18 +1,18 @@
-// Accessing Object Properties with Variables
+// Updating Object Properties
 
 /*
 
-Set the playerNumber variable to 16. Then, use the variable to look up the player's name and assign it to player.
+Update the myDog object's name property. Let's change her name from Coder to Happy Coder. You can use either dot or bracket notation.
 
 */
 
 // Setup
-const testObj = {
-  12: "Namath",
-  16: "Montana",
-  19: "Unitas",
+const myDog = {
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
 };
 
 // Only change code below this line
-const playerNumber = 16; // Change this line
-const player = testObj[playerNumber]; // Change this line
+myDog.name = "Happy Coder";
