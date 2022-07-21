@@ -1,20 +1,23 @@
-// Comparisons with the Logical Or Operator
+// Introducing Else Statements
 
 /* 
 
-Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside.
+Combine the if statements into a single if/else statement.
 
 */
 
-function testLogicalOr(val) {
+function testElse(val) {
+  let result = "";
   // Only change code below this line
 
-  if (val < 10 || val > 20) {
-    return "Outside";
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
   }
 
   // Only change code above this line
-  return "Inside";
+  return result;
 }
 
-testLogicalOr(15);
+testElse(4);
