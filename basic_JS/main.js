@@ -1,20 +1,20 @@
-// Comparisons with the Logical And Operator
+// Comparisons with the Logical Or Operator
 
 /* 
 
-Replace the two if statements with one statement, using the && operator, which will return the string Yes if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return the string No.
+Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside.
 
 */
 
-function testLogicalAnd(val) {
+function testLogicalOr(val) {
   // Only change code below this line
 
-  if (val <= 50 && val >= 25) {
-    return "Yes";
+  if (val < 10 || val > 20) {
+    return "Outside";
   }
 
   // Only change code above this line
-  return "No";
+  return "Inside";
 }
 
-testLogicalAnd(10);
+testLogicalOr(15);
