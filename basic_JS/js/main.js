@@ -1,18 +1,18 @@
-// Accessing Object Properties with Bracket Notation
+// Accessing Object Properties with Variables
 
 /*
 
-Read the values of the properties an entree and the drink of testObj using bracket notation and assign them to entreeValue and drinkValue respectively.
+Set the playerNumber variable to 16. Then, use the variable to look up the player's name and assign it to player.
 
 */
 
 // Setup
 const testObj = {
-  "an entree": "hamburger",
-  "my side": "veggies",
-  "the drink": "water",
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas",
 };
 
 // Only change code below this line
-const entreeValue = testObj["an entree"]; // Change this line
-const drinkValue = testObj["the drink"]; // Change this line
+const playerNumber = 16; // Change this line
+const player = testObj[playerNumber]; // Change this line
