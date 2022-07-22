@@ -15,3 +15,4 @@ function checkObj(obj, checkProp) {
   }
   // Only change code above this line
 }
+// ! EX 90 COMPLETED // Testing Objects for Properties
