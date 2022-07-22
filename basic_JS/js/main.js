@@ -1,14 +1,14 @@
-// Iterate with JavaScript For Loops
+// Iterate Odd Numbers With a For Loop
 
 /*
 
-Use a for loop to push the values 1 through 5 onto myArray.
+Push the odd numbers from 1 through 9 to myArray using a for loop.
 
 */
 
 // Setup
 const myArray = [];
-for (let o = 1; o <= 5; o++) {
-  myArray.push(o);
+for (let i = 1; i <= 9; i += 2) {
+  myArray.push(i);
 }
 // Only change code below this line
