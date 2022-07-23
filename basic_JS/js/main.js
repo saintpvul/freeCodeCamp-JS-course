@@ -6,8 +6,9 @@ Create a function called randomRange that takes a range myMin and myMax and retu
 
 */
 
-function randomRange(myMin, myMax) {
-  // Only change code below this line
-  return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
-  // Only change code above this line
+function convertToInteger(str) {
+  let toInt = parseInt(str);
+  return toInt;
 }
+
+convertToInteger("56");
