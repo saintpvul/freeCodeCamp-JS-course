@@ -1,8 +1,7 @@
-// Generate Random Whole Numbers within a Range
-
+// Use the parseInt Function
 /*
 
-Create a function called randomRange that takes a range myMin and myMax and returns a random whole number that's greater than or equal to myMin, and is less than or equal to myMax, inclusive.
+Use parseInt() in the convertToInteger function so it converts the input string str into an integer, and returns it.
 
 */
 
