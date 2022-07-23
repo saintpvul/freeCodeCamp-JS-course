@@ -1,13 +1,12 @@
-// Use the parseInt Function with a Radix
+// Use the Conditional (Ternary) Operator
 /*
 
-Use parseInt() in the convertToInteger function so it converts a binary number to an integer and returns it.
+Use the conditional operator in the checkEqual function to check if two numbers are equal or not. The function should return either the string Equal or the string Not Equal.
 
 */
 
-function convertToInteger(str) {
-  let toInt = parseInt(str, 2);
-  return toInt;
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal";
 }
 
-convertToInteger("10011");
+checkEqual(1, 2);
