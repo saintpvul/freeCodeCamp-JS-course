@@ -1,15 +1,13 @@
-// Generate Random Fractions with JavaScript
+// Generate Random Whole Numbers with JavaScript
 
 /*
 
-Change randomFraction to return a random number instead of returning 0.
+Use this technique to generate and return a random whole number between 0 and 9.
 
 */
 
-function randomFraction() {
+function randomWholeNum() {
   // Only change code below this line
 
-  return Math.random(100);
-
-  // Only change code above this line
+  return Math.floor(Math.random() * 10);
 }
