@@ -1,13 +1,16 @@
-//  Use the Rest Parameter with Function Parameters
+//  Use the Spread Operator to Evaluate Arrays In-Place
 
 /*
 
-Modify the function sum using the rest parameter in such a way that the function sum is able to take any number of arguments and return their sum.
+Copy all contents of arr1 into another array arr2 using the spread operator.
 
 
 
 */
 
-const sum = (...args) => {
-  return args.reduce((a, b) => a + b, 0);
-};
+const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
+let arr2;
+
+arr2 = [...arr1]; // Change this line
+
+console.log(arr2);
