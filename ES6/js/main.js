@@ -1,18 +1,21 @@
-//  Write Concise Declarative Functions with ES6
+//  Use class Syntax to Define a Constructor Function
 
 /*
 
-Refactor the function setGear inside the object bicycle to use the shorthand syntax described above.
+Use the class keyword and write a constructor to create the Vegetable class.
+
+The Vegetable class allows you to create a vegetable object with a property name that gets passed to the constructor.
 
 */
 
-// Only change code below this line
-const bicycle = {
-  gear: 2,
-  setGear(newGear) {
-    this.gear = newGear;
-  },
-};
-// Only change code above this line
-bicycle.setGear(3);
-console.log(bicycle.gear);
+function makeClass() {
+  class Vegetable {
+    constructor(name) {
+      this.name = name;
+    }
+  }
+  return Vegetable;
+}
+const Vegetable = makeClass();
+const carrot = new Vegetable("carrot");
+console.log(carrot.name); // Should display 'carrot'
