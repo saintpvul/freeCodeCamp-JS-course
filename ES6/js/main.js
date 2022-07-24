@@ -1,8 +1,8 @@
-//  Use Destructuring Assignment to Extract Values from Objects
+//  Use Destructuring Assignment to Assign Variables from Objects
 
 /*
 
-Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables today and tomorrow the values of today and tomorrow from the HIGH_TEMPERATURES object.
+Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables highToday and highTomorrow the values of today and tomorrow from the HIGH_TEMPERATURES object.
 
 */
 
@@ -14,6 +14,6 @@ const HIGH_TEMPERATURES = {
 
 // Only change code below this line
 
-const { today, tomorrow } = HIGH_TEMPERATURES;
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
 
 // Only change code above this line
