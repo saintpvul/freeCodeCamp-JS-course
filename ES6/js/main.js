@@ -1,13 +1,13 @@
-//  Reuse JavaScript Code Using import
+//  Use * to Import Everything from a File
 
 /*
 
-Add the appropriate import statement that will allow the current file to use the uppercaseString and lowercaseString functions you exported in the previous lesson. These functions are in a file called string_functions.js, which is in the same directory as the current file.
+The code in this file requires the contents of the file: string_functions.js, that is in the same directory as the current file. Use the import * as syntax to import everything from the file into an object called stringFunctions.
 
 */
 
-import { uppercaseString, lowercaseString } from "./string_functions.js";
+import * as stringFunctions from "./string_functions.js";
 // Only change code above this line
 
-uppercaseString("hello");
-lowercaseString("WORLD!");
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
