@@ -1,15 +1,17 @@
-//  Create a Module Script
+//  Use export to Share a Code Block
 
 /*
 
-Add a script to the HTML document of type module and give it the source file of index.js
+There are two string-related functions in the editor. Export both of them using the method of your choice.
 
 */
 
-<html>
-  <body>
-    <!-- Only change code below this line -->
-    <script type="module" src="index.js"></script>
-    <!-- Only change code above this line -->
-  </body>
-</html>
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+};
+
+const lowercaseString = (string) => {
+  return string.toLowerCase();
+};
+
+export { uppercaseString, lowercaseString };
