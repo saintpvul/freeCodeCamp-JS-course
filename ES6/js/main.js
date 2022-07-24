@@ -1,16 +1,19 @@
-//  Use the Spread Operator to Evaluate Arrays In-Place
+//  Use Destructuring Assignment to Extract Values from Objects
 
 /*
 
-Copy all contents of arr1 into another array arr2 using the spread operator.
-
-
+Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables today and tomorrow the values of today and tomorrow from the HIGH_TEMPERATURES object.
 
 */
 
-const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
-let arr2;
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80,
+};
 
-arr2 = [...arr1]; // Change this line
+// Only change code below this line
 
-console.log(arr2);
+const { today, tomorrow } = HIGH_TEMPERATURES;
+
+// Only change code above this line
