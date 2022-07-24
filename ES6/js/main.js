@@ -1,9 +1,18 @@
-//  Write Concise Object Literal Declarations Using Object Property Shorthand
+//  Write Concise Declarative Functions with ES6
 
 /*
 
-Use object property shorthand with object literals to create and return an object with name, age and gender properties.
+Refactor the function setGear inside the object bicycle to use the shorthand syntax described above.
 
 */
 
-const createPerson = (name, age, gender) => ({ name, age, gender });
+// Only change code below this line
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  },
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
