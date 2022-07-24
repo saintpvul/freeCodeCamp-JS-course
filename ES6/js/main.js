@@ -1,9 +1,9 @@
-//  Use Arrow Functions to Write Concise Anonymous Functions
+//  Write Arrow Functions with Parameters
 
 /*
 
-Rewrite the function assigned to the variable magic which returns a new Date() to use arrow function syntax. Also, make sure nothing is defined using the keyword var.
+Rewrite the myConcat function which appends contents of arr2 to arr1 so that the function uses arrow function syntax.
 
 */
 
-const magic = () => new Date();
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
