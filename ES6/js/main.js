@@ -1,20 +1,32 @@
-//  Compare Scopes of the var and let Keywords
+//  Mutate an Array Declared with const
 
 /*
 
-Fix the code so that i declared in the if statement is a separate variable than i declared in the first line of the function. Be certain not to use the var keyword anywhere in your code.
-
-This exercise is designed to illustrate the difference between how var and let keywords assign scope to the declared variable. When programming a function similar to the one used in this exercise, it is often better to use different variable names to avoid confusion.
+An array is declared as const s = [5, 7, 2]. Change the array to [2, 5, 7] using various element assignments.
 
 
 */
 
-function checkScope() {
-  let i = "function scope";
-  if (i !== "function scope") {
-    i = "block scope";
-    console.log("Block scope i is: ", i);
-  }
-  console.log("Function scope i is: ", i);
-  return i;
+const s0 = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+  let popS = s0.pop();
+  let unshiftPop = s0.unshift(popS);
+  return s0;
+  // Using s = [2, 5, 7] would be invalid
+
+  // Only change code above this line
 }
+editInPlace();
+
+const s1 = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+  s1[0] = 2;
+  s1[1] = 5;
+  s1[2] = 7;
+  // Using s = [2, 5, 7] would be invalid
+
+  // Only change code above this line
+}
+editInPlace();
