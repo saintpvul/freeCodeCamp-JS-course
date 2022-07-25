@@ -1,13 +1,14 @@
-// Match Ending String Patterns
+// Match All Letters and Numbers
 
 /*
 
-Use the anchor character ($) to match the string caboose at the end of the string caboose.
+Use the shorthand character class \w to count the number of alphanumeric characters in various quotes and strings.
 
 */
 
 // Solution
 
-let caboose = "The last car on a train is the caboose";
-let lastRegex = /caboose$/; // Change this line
-let result = lastRegex.test(caboose);
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
+console.log(result);
