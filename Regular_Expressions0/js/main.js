@@ -1,13 +1,18 @@
-// Restrict Possible Usernames
+// Find More Than the First Match
 
 /*
 
-Change the regex userCheck to fit the constraints listed above.
+Using the regex starRegex, find and extract both Twinkle words from the string twinkleStar.
+
+Note
+You can have multiple flags on your regex like /search/gi
+
+
 
 */
 
 // Solution
 
-let username = "JackOfAllTrades";
-let userCheck = /^[a-z][a-z]+\d*$|^[a-z]+\d\d+$/i; // Change this line
-let result = userCheck.test(username);
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi; // Change this line
+let result = twinkleStar.match(starRegex); // Change this line
