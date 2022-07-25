@@ -1,14 +1,13 @@
-// Extract Matches
+// Match Anything with Wildcard Period
 
 /*
 
-Apply the .match() method to extract the string coding.
+Complete the regex unRegex so that it matches the strings run, sun, fun, pun, nun, and bun. Your regex should use the wildcard character.
 
 */
 
 // Solution
 
-let extractStr = "Extract the word 'coding' from this string.";
-let codingRegex = /coding/; // Change this line
-let result = extractStr.match(codingRegex); // Change this line
-console.log(result);
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);
