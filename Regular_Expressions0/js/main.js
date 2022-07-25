@@ -1,11 +1,13 @@
-// Find One or More Criminals in a Hunt
+// Match Beginning String Patterns
 
 /*
 
-Write a greedy regex that finds one or more criminals within a group of other people. A criminal is represented by the capital letter C.
+Use the caret character in a regex to find Cal only in the beginning of the string rickyAndCal.
 
 */
 
 // Solution
 
-let reCriminals = /C+/g; // Change this line
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
