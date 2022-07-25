@@ -1,14 +1,13 @@
-// Using the Test Method
+// Match Literal Strings
 
 /*
 
-Apply the regex myRegex on the string myString using the .test() method.
+Complete the regex waldoRegex to find "Waldo" in the string waldoIsHiding with a literal match.
 
 */
 
 // Solution
 
-let myString = "Hello, World!";
-let myRegex = /Hello/;
-let result = myRegex.test(myString); // Change this line
-console.log(result);
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);
