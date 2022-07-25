@@ -1,13 +1,16 @@
-// Match Characters that Occur One or More Times
+// Match Characters that Occur Zero or More Times
 
 /*
 
-You want to find matches when the letter s occurs one or more times in Mississippi. Write a regex that uses the + sign.
+For this challenge, chewieQuote has been initialized as the string Aaaaaaaaaaaaaaaarrrgh! behind the scenes. Create a regex chewieRegex that uses the * character to match an uppercase A character immediately followed by zero or more lowercase a characters in chewieQuote. Your regex does not need flags or character classes, and it should not match any of the other quotes.
 
 */
 
 // Solution
 
-let difficultSpelling = "Mississippi";
-let myRegex = /s+/gi; // Change this line
-let result = difficultSpelling.match(myRegex);
+// Only change code below this line
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+
+let result = chewieQuote.match(chewieRegex);
