@@ -1,13 +1,13 @@
-// Match Beginning String Patterns
+// Match Ending String Patterns
 
 /*
 
-Use the caret character in a regex to find Cal only in the beginning of the string rickyAndCal.
+Use the anchor character ($) to match the string caboose at the end of the string caboose.
 
 */
 
 // Solution
 
-let rickyAndCal = "Cal and Ricky both like racing.";
-let calRegex = /^Cal/; // Change this line
-let result = calRegex.test(rickyAndCal);
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose);
