@@ -1,13 +1,13 @@
-// Match All Non-Numbers
+// Restrict Possible Usernames
 
 /*
 
-Use the shorthand character class for non-digits \D to count how many non-digits are in movie titles.
+Change the regex userCheck to fit the constraints listed above.
 
 */
 
 // Solution
 
-let movieName = "2001: A Space Odyssey";
-let noNumRegex = /\D/g; // Change this line
-let result = movieName.match(noNumRegex).length;
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]+\d\d+$/i; // Change this line
+let result = userCheck.test(username);
