@@ -1,15 +1,13 @@
-// Match Letters of the Alphabet
+// Match Single Characters Not Specified
 
 /*
 
-Match all the letters in the string quoteSample.
-
-Note: Be sure to match both uppercase and lowercase letters.
+Create a single regex that matches all characters that are not a number or a vowel. Remember to include the appropriate flags in the regex.
 
 */
 
 // Solution
 
-let quoteSample = "The quick brown fox jumps over the lazy dog.";
-let alphabetRegex = /[a-z]/gi; // Change this line
-let result = quoteSample.match(alphabetRegex); // Change this line
+let quoteSample = "3 blind mice.";
+let myRegex = /[^0-9aeiou]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
