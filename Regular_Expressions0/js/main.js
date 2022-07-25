@@ -1,13 +1,13 @@
-// Match Single Characters Not Specified
+// Match Characters that Occur One or More Times
 
 /*
 
-Create a single regex that matches all characters that are not a number or a vowel. Remember to include the appropriate flags in the regex.
+You want to find matches when the letter s occurs one or more times in Mississippi. Write a regex that uses the + sign.
 
 */
 
 // Solution
 
-let quoteSample = "3 blind mice.";
-let myRegex = /[^0-9aeiou]/gi; // Change this line
-let result = quoteSample.match(myRegex); // Change this line
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/gi; // Change this line
+let result = difficultSpelling.match(myRegex);
