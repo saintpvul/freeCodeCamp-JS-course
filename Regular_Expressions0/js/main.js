@@ -1,14 +1,14 @@
-// Match Everything But Letters and Numbers
+// Match All Numbers
 
 /*
 
-Use the shorthand character class \W to count the number of non-alphanumeric characters in various quotes and strings.
+Use the shorthand character class \d to count how many digits are in movie titles. Written out numbers ("six" instead of 6) do not count.
 
 */
 
 // Solution
 
-let quoteSample = "The five boxing wizards jump quickly.";
-let nonAlphabetRegex = /\W/g; // Change this line
-let result = quoteSample.match(nonAlphabetRegex).length;
-console.log(result);
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
+let numToInt = Number(result);
