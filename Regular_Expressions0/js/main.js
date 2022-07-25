@@ -1,13 +1,11 @@
-// Find Characters with Lazy Matching
+// Find One or More Criminals in a Hunt
 
 /*
 
-Fix the regex /<.*>/ to return the HTML tag <h1> and not the text "<h1>Winter is coming</h1>". Remember the wildcard . in a regular expression matches any character.
+Write a greedy regex that finds one or more criminals within a group of other people. A criminal is represented by the capital letter C.
 
 */
 
 // Solution
 
-let text = "<h1>Winter is coming</h1>";
-let myRegex = /<...>*?/g; // Change this line
-let result = text.match(myRegex);
+let reCriminals = /C+/g; // Change this line
