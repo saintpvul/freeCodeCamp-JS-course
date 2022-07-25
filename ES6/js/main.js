@@ -1,11 +1,8 @@
-//  Import a Default Export
+//  Create a JavaScript Promise
 /*
 
-In the following code, import the default export from the math_functions.js file, found in the same directory as this file. Give the import the name subtract.
+Create a new promise called makeServerRequest. Pass in a function with resolve and reject parameters to the constructor.
 
 */
 
-import subtract from "./math_functions.js";
-// Only change code above this line
-
-subtract(7, 4);
+const makeServerRequest = new Promise((resolve, reject) => {});
