@@ -1,14 +1,13 @@
-// Match All Numbers
+// Match All Non-Numbers
 
 /*
 
-Use the shorthand character class \d to count how many digits are in movie titles. Written out numbers ("six" instead of 6) do not count.
+Use the shorthand character class for non-digits \D to count how many non-digits are in movie titles.
 
 */
 
 // Solution
 
 let movieName = "2001: A Space Odyssey";
-let numRegex = /\d/g; // Change this line
-let result = movieName.match(numRegex).length;
-let numToInt = Number(result);
+let noNumRegex = /\D/g; // Change this line
+let result = movieName.match(noNumRegex).length;
