@@ -1,13 +1,13 @@
-// Match a Literal String with Different Possibilities
+// Ignore Case While Matching
 
 /*
 
-Complete the regex petRegex to match the pets dog, cat, bird, or fish.
+Write a regex fccRegex to match freeCodeCamp, no matter its case. Your regex should not match any abbreviations or variations with spaces.
 
 */
 
 // Solution
 
-let petString = "James has a pet cat.";
-let petRegex = /dog|cat|bird|fish/; // Change this line
-let result = petRegex.test(petString);
+let myString = "freeCodeCamp";
+let fccRegex = /FrEEcOdEcamP/i; // Change this line
+let result = fccRegex.test(myString);
