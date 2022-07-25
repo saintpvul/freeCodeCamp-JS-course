@@ -1,16 +1,13 @@
-// Match Characters that Occur Zero or More Times
+// Find Characters with Lazy Matching
 
 /*
 
-For this challenge, chewieQuote has been initialized as the string Aaaaaaaaaaaaaaaarrrgh! behind the scenes. Create a regex chewieRegex that uses the * character to match an uppercase A character immediately followed by zero or more lowercase a characters in chewieQuote. Your regex does not need flags or character classes, and it should not match any of the other quotes.
+Fix the regex /<.*>/ to return the HTML tag <h1> and not the text "<h1>Winter is coming</h1>". Remember the wildcard . in a regular expression matches any character.
 
 */
 
 // Solution
 
-// Only change code below this line
-let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
-let chewieRegex = /Aa*/; // Change this line
-// Only change code above this line
-
-let result = chewieQuote.match(chewieRegex);
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<...>*?/g; // Change this line
+let result = text.match(myRegex);
