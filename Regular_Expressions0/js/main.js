@@ -1,15 +1,16 @@
-// Use Capture Groups to Search and Replace
+// Remove Whitespace from Start and End
 
 /*
 
-Write a regex fixRegex using three capture groups that will search for each word in the string one two three. Then update the replaceText variable to replace one two three with the string three two one and assign the result to the result variable. Make sure you are utilizing capture groups in the replacement string using the dollar sign ($) syntax.
+Write a regex and use the appropriate string methods to remove whitespace at the beginning and end of strings.
+
+Note: The String.prototype.trim() method would work here, but you'll need to complete this challenge using regular expressions.
 
 
 */
 
 // Solution
 
-let str = "one two three";
-let fixRegex = /^(\w+) (\w+) (\w+)$/; // Change this line
-let replaceText = "$3 $2 $1"; // Change this line
-let result = str.replace(fixRegex, replaceText);
+let hello = "   Hello, World!  ";
+let wsRegex = /^( +)|( +)$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
