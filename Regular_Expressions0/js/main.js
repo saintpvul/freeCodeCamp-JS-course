@@ -1,14 +1,14 @@
-// Check for All or None
+// Positive and Negative Lookahead
 
 /*
 
-Change the regex favRegex to match both the American English (favorite) and the British English (favourite) version of the word.
+Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long, and have two consecutive digits.
 
 
 */
 
 // Solution
 
-let favWord = "favorite";
-let favRegex = /favou?rite/; // Change this line
-let result = favRegex.test(favWord);
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/g; // Change this line
+let result = pwRegex.test(sampleWord);
