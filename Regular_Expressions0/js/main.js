@@ -1,18 +1,14 @@
-// Find More Than the First Match
+// Match Whitespace
 
 /*
 
-Using the regex starRegex, find and extract both Twinkle words from the string twinkleStar.
-
-Note
-You can have multiple flags on your regex like /search/gi
-
+Change the regex countWhiteSpace to look for multiple whitespace characters in a string.
 
 
 */
 
 // Solution
 
-let twinkleStar = "Twinkle, twinkle, little star";
-let starRegex = /Twinkle/gi; // Change this line
-let result = twinkleStar.match(starRegex); // Change this line
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let result = sample.match(countWhiteSpace);
