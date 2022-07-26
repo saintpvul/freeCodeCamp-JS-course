@@ -1,8 +1,8 @@
-// Match Whitespace
+// Match Non-Whitespace Characters
 
 /*
 
-Change the regex countWhiteSpace to look for multiple whitespace characters in a string.
+Change the regex countNonWhiteSpace to look for multiple non-whitespace characters in a string.
 
 
 */
@@ -10,5 +10,5 @@ Change the regex countWhiteSpace to look for multiple whitespace characters in a
 // Solution
 
 let sample = "Whitespace is important in separating words";
-let countWhiteSpace = /\s/g; // Change this line
-let result = sample.match(countWhiteSpace);
+let countNonWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countNonWhiteSpace);
