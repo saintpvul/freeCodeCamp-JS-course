@@ -1,14 +1,14 @@
-// Specify Exact Number of Matches
+// Check for All or None
 
 /*
 
-Change the regex timRegex to match the word Timber only when it has four letter m's.
+Change the regex favRegex to match both the American English (favorite) and the British English (favourite) version of the word.
 
 
 */
 
 // Solution
 
-let timStr = "Timmmmber";
-let timRegex = /tim{4}ber/i; // Change this line
-let result = timRegex.test(timStr);
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result = favRegex.test(favWord);
