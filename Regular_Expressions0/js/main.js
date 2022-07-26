@@ -1,14 +1,14 @@
-// Match Non-Whitespace Characters
+// Specify Upper and Lower Number of Matches
 
 /*
 
-Change the regex countNonWhiteSpace to look for multiple non-whitespace characters in a string.
+Change the regex ohRegex to match the entire phrase Oh no only when it has 3 to 6 letter h's.
 
 
 */
 
 // Solution
 
-let sample = "Whitespace is important in separating words";
-let countNonWhiteSpace = /\S/g; // Change this line
-let result = sample.match(countNonWhiteSpace);
+let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6} no/i; // Change this line
+let result = ohRegex.test(ohStr);
