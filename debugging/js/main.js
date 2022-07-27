@@ -1,17 +1,20 @@
-//  Catch Arguments Passed in the Wrong Order When Calling a Function
+//  Catch Off By One Errors When Using Indexing
 
 /*
 
-The function raiseToPower raises a base to an exponent. Unfortunately, it's not called properly - fix the code so the value of power is the expected 8.
+Fix the two indexing errors in the following function so all the numbers 1 through 5 are printed to the console.
 
 
 */
 
-function raiseToPower(b, e) {
-  return Math.pow(b, e);
+function countToFive() {
+  let firstFive = "12345";
+  let len = firstFive.length;
+  // Only change code below this line
+  for (let i = 0; i < len; i++) {
+    // Only change code above this line
+    console.log(firstFive[i]);
+  }
 }
 
-let base = 2;
-let exp = 3;
-let power = raiseToPower(base, exp);
-console.log(power);
+countToFive();
