@@ -1,13 +1,12 @@
-//  Catch Unclosed Parentheses, Brackets, Braces and Quotes
+//  Catch Mixed Usage of Single and Double Quotes
 
 /*
 
-Fix the two pair errors in the code.
+Fix the string so it either uses different quotes for the href value, or escape the existing ones. Keep the double quote marks around the entire string.
 
 
 
 */
 
-let myArray = [1, 2, 3];
-let arraySum = myArray.reduce((previous, current) => previous + current);
-console.log(`Sum of array values is: ${arraySum}`);
+let innerHtml = '<p>Click here to <a href="#Home">return home</a></p>';
+console.log(innerHtml);
