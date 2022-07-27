@@ -1,12 +1,21 @@
-//  Catch Mixed Usage of Single and Double Quotes
+//  Catch Use of Assignment Operator Instead of Equality Operator
 
 /*
 
-Fix the string so it either uses different quotes for the href value, or escape the existing ones. Keep the double quote marks around the entire string.
+Fix the condition so the program runs the right branch, and the appropriate value is assigned to result.
 
 
 
 */
 
-let innerHtml = '<p>Click here to <a href="#Home">return home</a></p>';
-console.log(innerHtml);
+let x = 7;
+let y = 9;
+let result = "to come";
+
+if (x == y) {
+  result = "Equal!";
+} else {
+  result = "Not equal!";
+}
+
+console.log(result);
