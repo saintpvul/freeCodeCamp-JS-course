@@ -1,16 +1,14 @@
-//  Use typeof to Check the Type of a Variable
+//  Catch Misspelled Variable and Function Names
 
 /*
 
-Add two console.log() statements to check the typeof each of the two variables seven and three in the code.
+Fix the two spelling errors in the code so the netWorkingCapital calculation works.
 
 
 
 */
 
-let seven = 7;
-let three = "3";
-console.log(seven + three);
-// Only change code below this line
-console.log(typeof seven);
-console.log(typeof three);
+let receivables = 10;
+let payables = 8;
+let netWorkingCapital = receivables - payables;
+console.log(`Net working capital is: ${netWorkingCapital}`);
