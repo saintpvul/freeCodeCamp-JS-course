@@ -1,17 +1,17 @@
-//  Catch Missing Open and Closing Parenthesis After a Function Call
+//  Catch Arguments Passed in the Wrong Order When Calling a Function
 
 /*
 
-Fix the code so the variable result is set to the value returned from calling the function getNine.
+The function raiseToPower raises a base to an exponent. Unfortunately, it's not called properly - fix the code so the value of power is the expected 8.
 
 
 */
 
-function getNine() {
-  let x = 6;
-  let y = 3;
-  return x + y;
+function raiseToPower(b, e) {
+  return Math.pow(b, e);
 }
 
-let result = getNine();
-console.log(result);
+let base = 2;
+let exp = 3;
+let power = raiseToPower(base, exp);
+console.log(power);
