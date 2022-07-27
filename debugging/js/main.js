@@ -1,14 +1,13 @@
-//  Catch Misspelled Variable and Function Names
+//  Catch Unclosed Parentheses, Brackets, Braces and Quotes
 
 /*
 
-Fix the two spelling errors in the code so the netWorkingCapital calculation works.
+Fix the two pair errors in the code.
 
 
 
 */
 
-let receivables = 10;
-let payables = 8;
-let netWorkingCapital = receivables - payables;
-console.log(`Net working capital is: ${netWorkingCapital}`);
+let myArray = [1, 2, 3];
+let arraySum = myArray.reduce((previous, current) => previous + current);
+console.log(`Sum of array values is: ${arraySum}`);
