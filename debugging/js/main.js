@@ -1,21 +1,17 @@
-//  Catch Use of Assignment Operator Instead of Equality Operator
+//  Catch Missing Open and Closing Parenthesis After a Function Call
 
 /*
 
-Fix the condition so the program runs the right branch, and the appropriate value is assigned to result.
-
+Fix the code so the variable result is set to the value returned from calling the function getNine.
 
 
 */
 
-let x = 7;
-let y = 9;
-let result = "to come";
-
-if (x == y) {
-  result = "Equal!";
-} else {
-  result = "Not equal!";
+function getNine() {
+  let x = 6;
+  let y = 3;
+  return x + y;
 }
 
+let result = getNine();
 console.log(result);
