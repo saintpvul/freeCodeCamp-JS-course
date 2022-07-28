@@ -1,18 +1,16 @@
-// Remove Items from an Array with pop() and shift()
+// Remove Items Using splice()
 
 /*
 
-We have defined a function, popShift, which takes an array as an argument and returns a new array. Modify the function, using pop() and shift(), to remove the first and last elements of the argument array, and assign the removed elements to their corresponding variables, so that the returned array contains their values.
+We've initialized an array arr. Use splice() to remove elements from arr, so that it only contains elements that sum to the value of 10.
 
 
 */
 
 // Solution
 
-function popShift(arr) {
-  let popped = arr.pop(); // Change this line
-  let shifted = arr.shift(); // Change this line
-  return [shifted, popped];
-}
-
-console.log(popShift(["challenge", "is", "not", "complete"]));
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// Only change code below this line
+arr.splice(1, 4);
+// Only change code above this line
+console.log(arr);
