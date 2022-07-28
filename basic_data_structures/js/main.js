@@ -1,27 +1,20 @@
-// Add Items Using splice()
+// Copy Array Items Using slice()
 
 /*
 
-We have defined a function, htmlColorNames, which takes an array of HTML colors as an argument. Modify the function using splice() to remove the first two elements of the array and add 'DarkSalmon' and 'BlanchedAlmond' in their respective places.
+We have defined a function, forecast, that takes an array as an argument. Modify the function using slice() to extract information from the argument array and return a new array that contains the string elements warm and sunny.
 
 
 */
 
 // Solution
 
-function htmlColorNames(arr) {
+function forecast(arr) {
   // Only change code below this line
-  arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
-  // Only change code above this line
-  return arr;
+  let log24 = arr.slice(2, 4);
+  return log24;
 }
-
+// Only change code above this line
 console.log(
-  htmlColorNames([
-    "DarkGoldenRod",
-    "WhiteSmoke",
-    "LavenderBlush",
-    "PaleTurquoise",
-    "FireBrick",
-  ])
+  forecast(["cold", "rainy", "warm", "sunny", "cool", "thunderstorms"])
 );
