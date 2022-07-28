@@ -1,46 +1,48 @@
-// Check if an Object has a Property
+// Iterate Through the Keys of an Object with a for...in Statement
 
 /*
 
-Finish writing the function so that it returns true if the object passed to it contains all four names, Alan, Jeff, Sarah and Ryan and returns false otherwise.
+We've defined a function countOnline which accepts one argument (a users object). Use a for...in statement within this function to loop through the users object passed into the function and return the number of users whose online property is set to true. An example of a users object which could be passed to countOnline is shown below. Each user will have an online property with either a true or false value.
+
+{
+  Alan: {
+    online: false
+  },
+  Jeff: {
+    online: true
+  },
+  Sarah: {
+    online: false
+  }
+}
 
 
 */
 
 // Solution
 
-let users = {
+const users = {
   Alan: {
-    age: 27,
-    online: true,
+    online: false,
   },
   Jeff: {
-    age: 32,
     online: true,
   },
   Sarah: {
-    age: 48,
-    online: true,
-  },
-  Ryan: {
-    age: 19,
-    online: true,
+    online: false,
   },
 };
 
-function isEveryoneHere(userObj) {
+function countOnline(usersObj) {
   // Only change code below this line
-  if (
-    userObj.hasOwnProperty("Alan") &&
-    userObj.hasOwnProperty("Jeff") &&
-    userObj.hasOwnProperty("Sarah") &&
-    userObj.hasOwnProperty("Ryan")
-  ) {
-    return true;
-  } else {
-    return false;
+  let count = 0;
+  for (let user in usersObj) {
+    if (usersObj[user].online == true) {
+      count++;
+    }
   }
+  return count;
   // Only change code above this line
 }
 
-console.log(isEveryoneHere(users));
+console.log(countOnline(users));
