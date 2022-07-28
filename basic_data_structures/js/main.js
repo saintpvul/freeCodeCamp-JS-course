@@ -6,3 +6,15 @@ We have defined a variable called yourArray. Complete the statement by assigning
 
 
 */
+
+// Solution
+
+let yourArray = [
+  null,
+  24,
+  undefined,
+  "value",
+  "string",
+  true,
+  { name: "Peter", age: 24 },
+]; // Change this line
