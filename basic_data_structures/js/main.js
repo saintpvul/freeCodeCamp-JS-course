@@ -1,20 +1,16 @@
-// Use an Array to Store a Collection of Data
+// Access an Array's Contents Using Bracket Notation
 
 /*
 
-We have defined a variable called yourArray. Complete the statement by assigning an array of at least 5 elements in length to the yourArray variable. Your array should contain at least one string, one number, and one boolean.
+In order to complete this challenge, set the 2nd position (index 1) of myArray to anything you want, besides the letter b.
 
 
 */
 
 // Solution
 
-let yourArray = [
-  null,
-  24,
-  undefined,
-  "value",
-  "string",
-  true,
-  { name: "Peter", age: 24 },
-]; // Change this line
+let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = " and b where sitting on a pipe";
+// Only change code above this line
+console.log(myArray);
