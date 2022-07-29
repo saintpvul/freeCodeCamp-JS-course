@@ -1,20 +1,18 @@
-// Reverse a String
+// Factorialize a Number
 
 /*
 
-Reverse the provided string.
+Return the factorial of the provided integer.
 
-You may need to turn the string into an array before you can reverse it.
+If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
 
-Your result must be a string.
+Factorials are often represented with the shorthand notation n!
+
+For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
+
+Only integers greater than or equal to zero will be supplied to the function.
 
 */
 
-function reverseString(str) {
-  let toArr = str.split('');
-  let reverse = toArr.reverse();
-  let toStr = reverse.join('');
-  return toStr;
-}
+// !START EX #3
 
-reverseString("hello");
