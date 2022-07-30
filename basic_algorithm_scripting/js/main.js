@@ -1,14 +1,26 @@
-// Confirm the Ending
+// Repeat a String Repeat a String
 
 /*
 
-Check if a string (first argument, str) ends with the given target string (second argument, target).
-
-This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
+Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method.
 
 */
 
-function confirmEnding(str, target) {
-  str.substr(-target.length) === target ? true : false;
+function repeatStringNumTimes(str, num) {
+  let repeatStr = "";
+  while (num > 0) {
+    repeatStr += str;
+    num--;
+  }
+  return repeatStr;
 }
-confirmEnding("Bastian", "n");
+
+repeatStringNumTimes("abc", 3);
+
+function repeatStrNumTimes(str, num) {
+  let emptyStr = "";
+  if (num <= 0) return "";
+
+  if (num === 1) return str;
+  else return (emptyStr = str + repeatStrNumTimes(str, num - 1));
+}
