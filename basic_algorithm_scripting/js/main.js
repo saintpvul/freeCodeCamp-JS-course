@@ -1,22 +1,24 @@
-// Title Case a Sentence
+// Slice and Splice
 
 /*
 
-Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+You are given two arrays and an index.
 
-For the purpose of this exercise, you should also capitalize connecting words like the and of.
+Copy each element of the first array into the second array, in order.
+
+Begin inserting elements at index n of the second array.
+
+Return the resulting array. The input arrays should remain the same after the function runs.
 
 */
 
-function titleCase(str) {
-  let toLow = str.toLowerCase();
-  let splittedArr = toLow.split(" ");
-  for (let i = 0; i < splittedArr.length; i++) {
-    splittedArr[i] =
-      splittedArr[i].charAt(0).toUpperCase() + splittedArr[i].slice(1);
+function frankenSplice(arr1, arr2, n) {
+  let sliceArr = arr2.slice();
+  for (let i = 0; i < arr1.length; i++) {
+    sliceArr.splice(n, 0, arr1[i]);
+    n++;
   }
-  let joinArr = splittedArr.join(" ");
-  return joinArr;
+  return sliceArr;
 }
 
-titleCase("I'm a little tea pot");
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
