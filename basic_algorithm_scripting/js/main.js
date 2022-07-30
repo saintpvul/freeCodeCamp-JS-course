@@ -1,29 +1,14 @@
-// Return Largest Numbers in Arrays
+// Confirm the Ending
 
 /*
 
-Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
+Check if a string (first argument, str) ends with the given target string (second argument, target).
 
-Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
+This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
 
 */
 
-function largestOfFour(arr) {
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    let largestNum = arr[i][0];
-    for (let j = 1; j < arr[i].length; j++) {
-      if (arr[i][j] > largestNum) {
-        largestNum = arr[i][j];
-      }
-    }
-    result[i] = largestNum;
-  }
-  return result;
+function confirmEnding(str, target) {
+  str.substr(-target.length) === target ? true : false;
 }
-largestOfFour([
-  [4, 5, 1, 3],
-  [13, 27, 18, 26],
-  [32, 35, 37, 39],
-  [1000, 1001, 857, 1],
-]);
+confirmEnding("Bastian", "n");
