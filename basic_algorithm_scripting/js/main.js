@@ -1,26 +1,17 @@
-// Repeat a String Repeat a String
+// Truncate a String
 
 /*
 
-Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method.
+Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending.
 
 */
 
-function repeatStringNumTimes(str, num) {
-  let repeatStr = "";
-  while (num > 0) {
-    repeatStr += str;
-    num--;
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
   }
-  return repeatStr;
 }
 
-repeatStringNumTimes("abc", 3);
-
-function repeatStrNumTimes(str, num) {
-  let emptyStr = "";
-  if (num <= 0) return "";
-
-  if (num === 1) return str;
-  else return (emptyStr = str + repeatStrNumTimes(str, num - 1));
-}
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
