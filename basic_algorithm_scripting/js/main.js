@@ -1,18 +1,22 @@
-// Factorialize a Number
+// Find the Longest Word in a String
 
 /*
 
-Return the factorial of the provided integer.
+Return the length of the longest word in the provided sentence.
 
-If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
-
-Factorials are often represented with the shorthand notation n!
-
-For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
-
-Only integers greater than or equal to zero will be supplied to the function.
+Your response should be a number.
 
 */
 
-// !START EX #3
+function findLongestWordLength(str) {
+  let spliceStr = str.split(" ");
+  let longestWord = 0;
+  for (let i = 0; i < spliceStr.length; i++) {
+    if (spliceStr[i].length > longestWord) {
+      longestWord = spliceStr[i].length;
+    }
+  }
+  return longestWord;
+}
 
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
