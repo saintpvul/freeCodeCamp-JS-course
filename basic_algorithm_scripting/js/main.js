@@ -1,20 +1,15 @@
-// Finders Keepers
+// Boo who
 
 /*
 
-Create a function that looks through an array arr and returns the first element in it that passes a 'truth test'. This means that given an element x, the 'truth test' is passed if func(x) is true. If no element passes the test, return undefined.
+Check if a value is classified as a boolean primitive. Return true or false.
+
+Boolean primitives are true and false.
 
 */
 
-function findElement(arr, func) {
-  let num = 0;
-  for (let i = 0; i < arr.length; i++) {
-    num = arr[i];
-    if (func(num)) {
-      return num;
-    }
-  }
-  return undefined;
+function booWho(bool) {
+  return typeof bool === "boolean";
 }
 
-findElement([1, 2, 3, 4], (num) => num % 2 === 0);
+booWho(null);
