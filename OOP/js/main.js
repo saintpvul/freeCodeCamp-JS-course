@@ -1,25 +1,24 @@
-// Set the Child's Prototype to an Instance of the Parent
+// Reset an Inherited Constructor Property
 
 /*
 
-Modify the code so that instances of Dog inherit from Animal.
+Fix the code so duck.constructor and beagle.constructor return their respective constructors.
 
 */
 
 // Solution
 
 function Animal() {}
-
-Animal.prototype = {
-  constructor: Animal,
-  eat: function () {
-    console.log("nom nom nom");
-  },
-};
-
+function Bird() {}
 function Dog() {}
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
 
 // Only change code below this line
 
-Dog.prototype = Object.create(Animal.prototype);
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+
+let duck = new Bird();
 let beagle = new Dog();
