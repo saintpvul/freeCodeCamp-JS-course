@@ -1,8 +1,8 @@
-// Inherit Behaviors from a Supertype
+// Set the Child's Prototype to an Instance of the Parent
 
 /*
 
-Use Object.create to make two instances of Animal named duck and beagle.
+Modify the code so that instances of Dog inherit from Animal.
 
 */
 
@@ -17,7 +17,9 @@ Animal.prototype = {
   },
 };
 
+function Dog() {}
+
 // Only change code below this line
 
-let duck = Object.create(Animal.prototype); // Change this line
-let beagle = Object.create(Animal.prototype); // Change this line
+Dog.prototype = Object.create(Animal.prototype);
+let beagle = new Dog();
