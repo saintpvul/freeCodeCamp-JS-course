@@ -1,20 +1,12 @@
-// Use Inheritance So You Don't Repeat Yourself
+// Inherit Behaviors from a Supertype
 
 /*
 
-The eat method is repeated in both Cat and Bear. Edit the code in the spirit of DRY by moving the eat method to the Animal supertype.
+Use Object.create to make two instances of Animal named duck and beagle.
 
 */
 
 // Solution
-
-function Cat(name) {
-  this.name = name;
-}
-
-function Bear(name) {
-  this.name = name;
-}
 
 function Animal() {}
 
@@ -24,3 +16,8 @@ Animal.prototype = {
     console.log("nom nom nom");
   },
 };
+
+// Only change code below this line
+
+let duck = Object.create(Animal.prototype); // Change this line
+let beagle = Object.create(Animal.prototype); // Change this line
