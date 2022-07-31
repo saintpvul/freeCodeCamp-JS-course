@@ -1,22 +1,16 @@
-// Understand Own Properties
+// Use Prototype Properties to Reduce Duplicate Code
 
 /*
 
-Add the own properties of canary to the array ownProps.
+Add a numLegs property to the prototype of Dog
 
 
 */
 
-function Bird(name) {
+function Dog(name) {
   this.name = name;
-  this.numLegs = 2;
 }
 
-let canary = new Bird("Tweety");
-let ownProps = [];
-// Only change code below this line
-for (let property in canary) {
-  if (canary.hasOwnProperty(property)) {
-    ownProps.push(property);
-  }
-}
+Dog.prototype.numLegs = 4;
+// Only change code above this line
+let beagle = new Dog("Snoopy");
