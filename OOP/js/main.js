@@ -1,13 +1,15 @@
-// Create a Basic JavaScript Object
+// Use Dot Notation to Access the Properties of an Object
 
 /*
 
-Create a dog object with name and numLegs properties, and set them to a string and a number, respectively.
+Print both properties of the dog object to your console.
 
 
 */
 
 let dog = {
-  name: "Luffy",
+  name: "Spot",
   numLegs: 4,
 };
+// Only change code below this line
+console.log(dog.name, dog.numLegs);
