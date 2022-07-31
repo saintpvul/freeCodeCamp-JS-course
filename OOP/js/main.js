@@ -1,8 +1,8 @@
-// Use Dot Notation to Access the Properties of an Object
+// Create a Method on an Object
 
 /*
 
-Print both properties of the dog object to your console.
+Using the dog object, give it a method called sayLegs. The method should return the sentence This dog has 4 legs.
 
 
 */
@@ -10,6 +10,9 @@ Print both properties of the dog object to your console.
 let dog = {
   name: "Spot",
   numLegs: 4,
+  sayLegs: function () {
+    return "This dog has " + dog.numLegs + " legs.";
+  },
 };
-// Only change code below this line
-console.log(dog.name, dog.numLegs);
+
+dog.sayLegs();
