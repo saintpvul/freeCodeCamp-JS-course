@@ -1,8 +1,8 @@
-// Understand Where an Object’s Prototype Comes From
+// Understand the Prototype Chain
 
 /*
 
-Use isPrototypeOf to check the prototype of beagle.
+Modify the code to show the correct prototype chain.
 
 */
 
@@ -14,5 +14,7 @@ function Dog(name) {
 
 let beagle = new Dog("Snoopy");
 
-// Only change code below this line
-Dog.prototype.isPrototypeOf(beagle);
+Dog.prototype.isPrototypeOf(beagle); // yields true
+
+// Fix the code below so that it evaluates to true
+Object.prototype.isPrototypeOf(Dog.prototype);
