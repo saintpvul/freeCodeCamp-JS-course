@@ -6,3 +6,8 @@ Create a dog object with name and numLegs properties, and set them to a string a
 
 
 */
+
+let dog = {
+  name: "Luffy",
+  numLegs: 4,
+};
