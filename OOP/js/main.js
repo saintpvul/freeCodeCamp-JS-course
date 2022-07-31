@@ -1,23 +1,25 @@
-// Change the Prototype to a New Object
+// Remember to Set the Constructor Property when Changing the Prototype
 
 /*
 
-Add the property numLegs and the two methods eat() and describe() to the prototype of Dog by setting the prototype to a new object.
+Define the constructor property on the Dog prototype.
 
 */
 
 // Solution
+
 function Dog(name) {
   this.name = name;
 }
 
+// Only change code below this line
 Dog.prototype = {
-  // Only change code below this line
-  numLegs: 2,
+  constructor: Dog,
+  numLegs: 4,
   eat: function () {
-    console.log("what you prefer to eat?");
+    console.log("nom nom nom");
   },
   describe: function () {
-    console.log("Dog name is " + this.name + ".");
+    console.log("My name is " + this.name);
   },
 };
