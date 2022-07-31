@@ -1,18 +1,16 @@
-// Make Code More Reusable with the this Keyword
+// Define a Constructor Function
 
 /*
 
-Modify the dog.sayLegs method to remove any references to dog. Use the duck example for guidance.
+Create a constructor, Dog, with properties name, color, and numLegs that are set to a string, a string, and a number, respectively.
 
 
 */
 
-let dog = {
-  name: "Spot",
-  numLegs: 4,
-  sayLegs: function () {
-    return "This dog has " + this.numLegs + " legs.";
-  },
-};
+function Dog() {
+  this.name = "Alfredo";
+  this.color = "grey";
+  this.numLegs = 4;
+}
 
 dog.sayLegs();
