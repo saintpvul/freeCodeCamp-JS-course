@@ -1,8 +1,8 @@
-// Remember to Set the Constructor Property when Changing the Prototype
+// Understand Where an Object’s Prototype Comes From
 
 /*
 
-Define the constructor property on the Dog prototype.
+Use isPrototypeOf to check the prototype of beagle.
 
 */
 
@@ -12,14 +12,7 @@ function Dog(name) {
   this.name = name;
 }
 
+let beagle = new Dog("Snoopy");
+
 // Only change code below this line
-Dog.prototype = {
-  constructor: Dog,
-  numLegs: 4,
-  eat: function () {
-    console.log("nom nom nom");
-  },
-  describe: function () {
-    console.log("My name is " + this.name);
-  },
-};
+Dog.prototype.isPrototypeOf(beagle);
