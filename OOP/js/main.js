@@ -1,16 +1,22 @@
-// Verify an Object's Constructor with instanceof
+// Understand Own Properties
 
 /*
 
-Create a new instance of the House constructor, calling it myHouse and passing a number of bedrooms. Then, use instanceof to verify that it is an instance of House.
+Add the own properties of canary to the array ownProps.
 
 
 */
 
-function House(numBedrooms) {
-  this.numBedrooms = numBedrooms;
+function Bird(name) {
+  this.name = name;
+  this.numLegs = 2;
 }
 
+let canary = new Bird("Tweety");
+let ownProps = [];
 // Only change code below this line
-var myHouse = new House(4);
-myHouse instanceof House;
+for (let property in canary) {
+  if (canary.hasOwnProperty(property)) {
+    ownProps.push(property);
+  }
+}
