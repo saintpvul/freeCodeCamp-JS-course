@@ -1,20 +1,23 @@
-// Understand the Constructor Property
+// Change the Prototype to a New Object
 
 /*
 
-Write a joinDogFraternity function that takes a candidate parameter and, using the constructor property, return true if the candidate is a Dog, otherwise return false.
+Add the property numLegs and the two methods eat() and describe() to the prototype of Dog by setting the prototype to a new object.
 
 */
 
+// Solution
 function Dog(name) {
   this.name = name;
 }
 
-// Only change code below this line
-function joinDogFraternity(candidate) {
-  if (candidate.constructor === Dog) {
-    return true;
-  } else {
-    return false;
-  }
-}
+Dog.prototype = {
+  // Only change code below this line
+  numLegs: 2,
+  eat: function () {
+    console.log("what you prefer to eat?");
+  },
+  describe: function () {
+    console.log("Dog name is " + this.name + ".");
+  },
+};
