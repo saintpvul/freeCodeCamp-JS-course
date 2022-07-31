@@ -1,9 +1,8 @@
-// Use Prototype Properties to Reduce Duplicate Code
+// Iterate Over All Properties
 
 /*
 
-Add a numLegs property to the prototype of Dog
-
+Add all of the own properties of beagle to the array ownProps. Add all of the prototype properties of Dog to the array prototypeProps.
 
 */
 
@@ -12,5 +11,17 @@ function Dog(name) {
 }
 
 Dog.prototype.numLegs = 4;
-// Only change code above this line
+
 let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+// Only change code below this line
+for (let property in beagle) {
+  if (beagle.hasOwnProperty(property)) {
+    ownProps.push(property);
+  } else {
+    prototypeProps.push(property);
+  }
+}
