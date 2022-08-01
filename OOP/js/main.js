@@ -1,12 +1,25 @@
-// Understand the Immediately Invoked Function Expression (IIFE)
+// Use an IIFE to Create a Module
 
 /*
 
-Rewrite the function makeNest and remove its call so instead it's an anonymous immediately invoked function expression (IIFE).
+Create a module named funModule to wrap the two mixins isCuteMixin and singMixin. funModule should return an object.
+
 */
 
 // Solution
 
-(function () {
-  console.log("A cozy nest is ready");
+let funModule = (function () {
+  return {
+    isCuteMixin: function (obj) {
+      obj.isCute = function () {
+        return true;
+      };
+    },
+
+    singMixin: function (obj) {
+      obj.sing = function () {
+        console.log("Singing to an awesome tune");
+      };
+    },
+  };
 })();
