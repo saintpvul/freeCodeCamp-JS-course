@@ -1,32 +1,30 @@
-// Add Methods After Inheritance
+// Override Inherited Methods
+
 /*
 
-Add all necessary code so the Dog object inherits from Animal and the Dog's prototype constructor is set to Dog. Then add a bark() method to the Dog object so that beagle can both eat() and bark(). The bark() method should print Woof! to the console.
+Override the fly() method for Penguin so that it returns the string Alas, this is a flightless bird.
 
 */
 
 // Solution
 
-function Animal() {}
-Animal.prototype.eat = function () {
-  console.log("nom nom nom");
+function Bird() {}
+
+Bird.prototype.fly = function () {
+  return "I am flying!";
 };
 
-function Dog() {}
+function Penguin() {}
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
 
 // Only change code below this line
-Dog.prototype = Object.create(Animal.prototype);
-Dog.prototype.constructor = Dog;
 
-Dog.prototype.bark = function () {
-  console.log("Woof!");
-};
-Dog.prototype.eat = function () {
-  console.log("nom nom nom");
+Penguin.prototype.fly = function () {
+  return "Alas, this is a flightless bird.";
 };
 
 // Only change code above this line
 
-let beagle = new Dog();
-beagle.bark();
-beagle.eat();
+let penguin = new Penguin();
+console.log(penguin.fly());
