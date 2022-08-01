@@ -1,17 +1,12 @@
-// Use Closure to Protect Properties Within an Object from Being Modified Externally
+// Understand the Immediately Invoked Function Expression (IIFE)
 
 /*
 
-Change how weight is declared in the Bird function so it is a private variable. Then, create a method getWeight that returns the value of weight 15.
-
+Rewrite the function makeNest and remove its call so instead it's an anonymous immediately invoked function expression (IIFE).
 */
 
 // Solution
 
-function Bird() {
-  let weight = 15;
-
-  this.getWeight = function () {
-    return weight;
-  };
-}
+(function () {
+  console.log("A cozy nest is ready");
+})();
