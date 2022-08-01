@@ -1,29 +1,17 @@
-// Use a Mixin to Add Common Behavior Between Unrelated Objects
+// Use Closure to Protect Properties Within an Object from Being Modified Externally
 
 /*
 
-Create a mixin named glideMixin that defines a method named glide. Then use the glideMixin to give both bird and boat the ability to glide.
+Change how weight is declared in the Bird function so it is a private variable. Then, create a method getWeight that returns the value of weight 15.
 
 */
 
 // Solution
 
-let bird = {
-  name: "Donald",
-  numLegs: 2,
-};
+function Bird() {
+  let weight = 15;
 
-let boat = {
-  name: "Warrior",
-  type: "race-boat",
-};
-
-// Only change code below this line
-
-var glideMixin = function (obj) {
-  obj.glide = function () {
-    console.log("let's glide");
+  this.getWeight = function () {
+    return weight;
   };
-};
-glideMixin(bird);
-glideMixin(boat);
+}
