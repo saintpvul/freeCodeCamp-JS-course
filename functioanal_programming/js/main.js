@@ -1,8 +1,10 @@
-//  Avoid Mutations and Side Effects Using Functional Programming
+//  Pass Arguments to Avoid External Dependence in a Function
 
 /*
 
-Fill in the code for the function incrementer so it returns the value of the global variable fixedValue increased by one.
+Let's update the incrementer function to clearly declare its dependencies.
+
+Write the incrementer function so it takes an argument, and then returns a result after increasing the value by one.
 
 
 
@@ -13,8 +15,8 @@ Fill in the code for the function incrementer so it returns the value of the glo
 // The global variable
 let fixedValue = 4;
 
-function incrementer() {
-  // Only change code below this line
+// Only change code below this line
+function incrementer(fixedValue) {
   return fixedValue + 1;
 
   // Only change code above this line
