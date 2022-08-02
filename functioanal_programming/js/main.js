@@ -1,25 +1,20 @@
-//  Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem
+//  Sort an Array Alphabetically using the sort Method
 
 /*
 
-Complete the code for the squareList function using any combination of map(), filter(), and reduce(). The function should return a new array containing the squares of only the positive integers (decimal numbers are not integers) when an array of real numbers is passed to it. An example of an array of real numbers is [-3, 4.8, 5, 3, -3.2].
-
-Note: Your function should not use any kind of for or while loops or the forEach() function.
+Use the sort method in the alphabeticalOrder function to sort the elements of arr in alphabetical order. The function should return the sorted array.
 
 */
 
 // Solution
 
-const squareList = (arr) => {
+function alphabeticalOrder(arr) {
   // Only change code below this line
-  return arr.reduce((squaredIntegers, num) => {
-    return Number.isInteger(num) && num > 0
-      ? squaredIntegers.concat(num * num)
-      : squaredIntegers;
-  }, []);
 
+  return arr.sort(function (a, b) {
+    return a === b ? 0 : a < b ? -1 : 1;
+  });
   // Only change code above this line
-};
+}
 
-const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
-console.log(squaredIntegers);
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
