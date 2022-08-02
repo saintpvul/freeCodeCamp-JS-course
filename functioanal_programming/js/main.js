@@ -1,21 +1,18 @@
-//  Return a Sorted Array Without Changing the Original Array
+//  Split a String into an Array Using the split Method
 
 /*
 
-Use the sort method in the nonMutatingSort function to sort the elements of an array in ascending order. The function should return a new array, and not mutate the globalArray variable.
+Use the split method inside the splitify function to split str into an array of words. The function should return the array. Note that the words are not always separated by spaces, and the array should not contain punctuation.
 
 */
 
 // Solution
 
-const globalArray = [5, 6, 3, 2, 9];
-
-function nonMutatingSort(arr) {
+function splitify(str) {
   // Only change code below this line
-  return [].concat(arr).sort(function (a, b) {
-    return a - b;
-  });
+  return str.split(/\W/);
+
   // Only change code above this line
 }
 
-nonMutatingSort(globalArray);
+splitify("Hello World,I-am code");
