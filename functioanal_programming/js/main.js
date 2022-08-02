@@ -1,20 +1,21 @@
-//  Sort an Array Alphabetically using the sort Method
+//  Return a Sorted Array Without Changing the Original Array
 
 /*
 
-Use the sort method in the alphabeticalOrder function to sort the elements of arr in alphabetical order. The function should return the sorted array.
+Use the sort method in the nonMutatingSort function to sort the elements of an array in ascending order. The function should return a new array, and not mutate the globalArray variable.
 
 */
 
 // Solution
 
-function alphabeticalOrder(arr) {
-  // Only change code below this line
+const globalArray = [5, 6, 3, 2, 9];
 
-  return arr.sort(function (a, b) {
-    return a === b ? 0 : a < b ? -1 : 1;
+function nonMutatingSort(arr) {
+  // Only change code below this line
+  return [].concat(arr).sort(function (a, b) {
+    return a - b;
   });
   // Only change code above this line
 }
 
-alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+nonMutatingSort(globalArray);
