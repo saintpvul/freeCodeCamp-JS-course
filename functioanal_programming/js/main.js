@@ -1,29 +1,20 @@
-//  Implement the filter Method on a Prototype
+//  Return Part of an Array Using the slice Method
+
 /*
 
-Write your own Array.prototype.myFilter(), which should behave exactly like Array.prototype.filter(). You should not use the built-in filter method. The Array instance can be accessed in the myFilter method using this..
-
-
+Use the slice method in the sliceArray function to return part of the anim array given the provided beginSlice and endSlice indices. The function should return an array.
 
 */
 
 // Solution
 
-// The global variable
-const s = [23, 65, 98, 5];
-
-Array.prototype.myFilter = function (callback) {
+function sliceArray(anim, beginSlice, endSlice) {
   // Only change code below this line
-  const newArray = [];
-  for (let i = 0; i < this.length; i++) {
-    if (callback(this[i]) === true) {
-      newArray.push(this[i]);
-    }
-  }
-  // Only change code above this line
-  return newArray;
-};
 
-const new_s = s.myFilter(function (item) {
-  return item % 2 === 1;
-});
+  return anim.slice(beginSlice, endSlice);
+
+  // Only change code above this line
+}
+
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+sliceArray(inputAnim, 1, 3);
