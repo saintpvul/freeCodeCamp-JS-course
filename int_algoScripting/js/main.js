@@ -1,26 +1,31 @@
-// Diff Two Arrays
+// Seek and Destroy
 
 /*
 
-Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
+You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
 
-Note: You can return the array with its elements in any order.
+Note: You have to use the arguments object.
 
 */
 
 // Solution
 
-function diffArray(arr1, arr2) {
-  var newArr = [];
+function destroyer(arr) {
+  const valsToRemove = Object.values(arguments).slice(1);
+  const filteredArray = [];
 
-  newArr = arr1.concat(arr2);
+  for (let i = 0; i < arr.length; i++) {
+    let removeElement = false;
+    for (let j = 0; j < valsToRemove.length; j++) {
+      if (arr[i] === valsToRemove[j]) {
+        removeElement = true;
+      }
+    }
 
-  function checkNum(num) {
-    if (arr1.indexOf(num) === -1 || arr2.indexOf(num) === -1) {
-      return num;
+    if (!removeElement) {
+      filteredArray.push(arr[i]);
     }
   }
-  return newArr.filter(checkNum);
+  return filteredArray;
 }
-
-diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
