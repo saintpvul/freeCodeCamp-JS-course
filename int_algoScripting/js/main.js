@@ -1,19 +1,19 @@
-// Spinal Tap Case
+// Pig Latin
 
 /*
 
-Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+Translate the provided string to Pig Latin. Input strings are guaranteed to be English words in all lowercase.
 
 */
 
 // Solution
 
-function spinalCase(str) {
-  return str
-    .replace(/([a-z])([A-Z])/g, "$1 $2")
-    .toLowerCase()
-    .split(/(?:_| )+/)
-    .join("-");
+function translatePigLatin(str) {
+  let consonantRegex = /^[^aeoui]+/;
+  let matchConsonant = str.match(consonantRegex);
+  return matchConsonant !== null
+    ? str.replace(consonantRegex, "").concat(matchConsonant).concat("ay")
+    : str.concat("way");
 }
 
-spinalCase("This Is Spinal Tap");
+translatePigLatin("consonant");
