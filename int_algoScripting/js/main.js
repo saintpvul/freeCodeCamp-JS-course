@@ -1,40 +1,25 @@
-// DNA Pairing
+// Missing letters
 
 /*
 
-Pairs of DNA strands consist of nucleobase pairs. Base pairs are represented by the characters AT and CG, which form building blocks of the DNA double helix.
+Find the missing letter in the passed letter range and return it.
 
-The DNA strand is missing the pairing element. Write a function to match the missing base pairs for the provided DNA strand. For each character in the provided string, find the base pair character. Return the results as a 2d array.
-
-For example, for the input GCG, return [["G", "C"], ["C","G"], ["G", "C"]]
-
-The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
+If all letters are present in the range, return undefined.
 
 */
 
 // Solution
 
-function pairElement(str) {
-  let matchPairs = function (char, pairedArray) {
-    switch (char) {
-      case "A":
-        pairedArray.push(["A", "T"]);
-        break;
-      case "T":
-        pairedArray.push(["T", "A"]);
-        break;
-      case "C":
-        pairedArray.push(["C", "G"]);
-        break;
-      case "G":
-        pairedArray.push(["G", "C"]);
-        break;
-    }
-  };
-  const paired = [];
+function fearNotLetter(str) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let startingPoing = alphabet.indexOf(str[0]);
+
   for (let i = 0; i < str.length; i++) {
-    matchPairs(str[i], paired);
+    if (str[i] !== alphabet[startingPoing + i]) {
+      return alphabet[startingPoing + i];
+    }
   }
-  return paired;
+  return undefined;
 }
-pairElement("GCG");
+
+fearNotLetter("abce");
