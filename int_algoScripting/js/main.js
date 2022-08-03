@@ -1,23 +1,26 @@
-// Sum All Numbers in a Range
+// Diff Two Arrays
 
 /*
 
-We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them. The lowest number will not always come first.
+Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
 
-For example, sumAll([4,1]) should return 10 because sum of all the numbers between 1 and 4 (both inclusive) is 10.
+Note: You can return the array with its elements in any order.
 
 */
 
 // Solution
 
-function sumAll(arr) {
-  let max = Math.max(arr[0], arr[1]);
-  let min = Math.min(arr[0], arr[1]);
-  let sum = 0;
-  for (let i = min; i <= max; i++) {
-    sum += i;
+function diffArray(arr1, arr2) {
+  var newArr = [];
+
+  newArr = arr1.concat(arr2);
+
+  function checkNum(num) {
+    if (arr1.indexOf(num) === -1 || arr2.indexOf(num) === -1) {
+      return num;
+    }
   }
-  return sum;
+  return newArr.filter(checkNum);
 }
 
-sumAll([1, 4]);
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
