@@ -1,18 +1,22 @@
-//  Use the some Method to Check that Any Elements in an Array Meet a Criteria
+//  Introduction to Currying and Partial Application
 
 /*
 
-Use the some method inside the checkPositive function to check if any element in arr is positive. The function should return a Boolean value.
+Fill in the body of the add function so it uses currying to add parameters x, y, and z.
 
 */
 
 // Solution
 
-function checkPositive(arr) {
+function add(x) {
   // Only change code below this line
-  return arr.some((v) => v > 0);
+  return function (y) {
+    return function (z) {
+      return x + y + z;
+    };
+  };
 
   // Only change code above this line
 }
 
-checkPositive([1, 2, 3, -4, 5]);
+add(10)(20)(30);
