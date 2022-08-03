@@ -1,4 +1,4 @@
-// Wherefore art thou
+// Spinal Tap Case
 
 /*
 
@@ -10,25 +10,12 @@ For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { f
 
 // Solution
 
-function whatIsInAName(collection, source) {
-  // "What's in a name? that which we call a rose
-  // By any other name would smell as sweet.”
-  // -- by William Shakespeare, Romeo and Juliet
-  const sourceKeys = Object.keys(source);
-
-  return collection.filter((obj) =>
-    sourceKeys.every(
-      (key) => obj.hasOwnProperty(key) && obj[key] === source[key]
-    )
-  );
+function spinalCase(str) {
+  return str
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .toLowerCase()
+    .split(/(?:_| )+/)
+    .join("-");
 }
 
-// test here
-whatIsInAName(
-  [
-    { first: "Romeo", last: "Montague" },
-    { first: "Mercutio", last: null },
-    { first: "Tybalt", last: "Capulet" },
-  ],
-  { last: "Capulet" }
-);
+spinalCase("This Is Spinal Tap");
