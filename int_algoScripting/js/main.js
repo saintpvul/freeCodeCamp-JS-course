@@ -19,8 +19,16 @@ function smallestCommons(arr) {
   for (min; min <= max; min++) {
     newArr.push(min);
   }
-  const lowest = (currentValue) => n % currentValue === 0;
-  return arr;
+
+  const lowestCommon = (currentValue) => n % currentValue === 0;
+  let common = false;
+  let n = max * (max - 1);
+
+  while (common === false) {
+    n++;
+    common = newArr.every(lowestCommon);
+  }
+  return n;
 }
-// ! NOT COMPLETED EX 14
+
 smallestCommons([1, 5]);
