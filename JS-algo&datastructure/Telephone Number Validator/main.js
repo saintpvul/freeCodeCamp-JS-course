@@ -15,3 +15,19 @@ For this challenge you will be presented with a string such as 800-692-7753 or 8
 */
 
 // solution
+
+let check = [
+  /^\d\d\d\d\d\d\d\d\d\d$/,
+  /^\d\d\d-\d\d\d-\d\d\d\d/,
+  /^\d\d\d\s\d\d\d\s\d\d\d\d/,
+  /^\(\d\d\d\)\d\d\d-\d\d\d\d/,
+  /^\(\d\d\d\)\s\d\d\d-\d\d\d\d/,
+  /^1\d\d\d\d\d\d\d\d\d\d/,
+  /^1\s\d\d\d\s\d\d\d\s\d\d\d\d/,
+  /^1\s\d\d\d-\d\d\d-\d\d\d\d/,
+  /^1\(\d\d\d\)\d\d\d-\d\d\d\d/,
+  /^1\s\(\d\d\d\)\s\d\d\d-\d\d\d\d/,
+];
+const telephoneCheck = (str) => check.some((num) => num.test(str));
+
+console.log(telephoneCheck("2(757)622-7382"));
