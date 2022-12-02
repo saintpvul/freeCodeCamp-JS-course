@@ -12,3 +12,11 @@ All letters will be uppercase. Do not transform any non-alphabetic character (i.
 */
 
 // solution
+
+function rot13(str) {
+  return str.replace(/[A-Z]/g, (char) =>
+    String.fromCharCode((char.charCodeAt(0) % 26) + 65)
+  );
+}
+
+console.log(rot13("SERR PBQR PNZC"));
